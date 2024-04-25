@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './css/stylesheet.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { ThemeProvider } from './utils/context'
+import GlobalStyle from './utils/GlobaStyled'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <GlobalStyle />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
-);
-
-reportWebVitals();
+)
