@@ -1,5 +1,5 @@
-import { useTheme } from '../../utils/context'
-import Header from '../../component/Header'
+import { useTheme } from '../utils/context'
+import Header from '../component/Header'
 
 export default function Games() {
   const { theme } = useTheme()

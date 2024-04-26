@@ -33,6 +33,9 @@ const StyleGlobalStyle = createGlobalStyle`
     p {
         font-size: 16px;
     }
+    ul {
+        list-style-type: none;
+    }
 `
 export default function GlobalStyle() {
   const { theme } = useTheme()
