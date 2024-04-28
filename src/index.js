@@ -9,7 +9,6 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <GlobalStyle />
-
       <App />
     </ThemeProvider>
   </React.StrictMode>

@@ -10,18 +10,22 @@ const StyleGlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ isdarkmode }) =>
           isdarkmode ? colors.darkBgTheme : colors.lightBgTheme};
-        color: ${({ isdarkmode }) => (isdarkmode ? 'white' : 'black')};
         margin: 0;
         padding: 10px;
+        display: flex;
+        flex-direction: column;
     }
     a {
         text-decoration: none;
         cursor: pointer;
-        color: ${({ isdarkmode }) => (isdarkmode ? 'white' : 'black')};
       }
+    body, a, button {
+        color: ${({ isdarkmode }) => (isdarkmode ? 'white' : 'black')};
+    }
     h1 {
         font-size: 32px;
         text-align: center;
+        margin-bottom: 60px;
     }
     h2 {
         font-size: 24px;
@@ -35,6 +39,10 @@ const StyleGlobalStyle = createGlobalStyle`
     }
     ul {
         list-style-type: none;
+    }
+    button {
+        background: transparent;
+        border: none;
     }
 `
 export default function GlobalStyle() {
